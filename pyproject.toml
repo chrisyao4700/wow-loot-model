@@ -1,0 +1,24 @@
+[project]
+name = "sea-of-blossoms-model"
+version = "0.1.0"
+description = "Training and offline inference package for Sea of Blossoms loot models."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+sob-model-prepare-training-data = "sea_of_blossoms_model.cli.prepare_training_data:main"
+sob-model-predict = "sea_of_blossoms_model.cli.predict:main"
+sob-model-serve = "sea_of_blossoms_model.cli.serve:main"
+sob-model-train = "sea_of_blossoms_model.cli.train:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.9"
+typeCheckingMode = "basic"
