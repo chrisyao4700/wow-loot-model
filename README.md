@@ -1,7 +1,15 @@
+<p align="center">
+  <img src="docs/assets/nene-prediction-badge.svg" alt="奈奈の掉落预测" width="96" height="96" />
+</p>
+
 <h1 align="center">奈奈の掉落预测 · Model</h1>
 
 <p align="center">
   Python package for training, offline inference, serving, and model comparison behind the WoW loot predictor.
+</p>
+
+<p align="center">
+  <img src="docs/assets/nene-portrait-badge.png" alt="Nene portrait badge" width="120" />
 </p>
 
 This repo powers the **model layer** for the loot prediction flow. Given a `raidId`, `instanceId`, and boss loot pools, it predicts which items each boss will drop.

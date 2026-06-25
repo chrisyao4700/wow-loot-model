@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <title>Nene prediction badge</title>
+  <desc>Sketchy Nene-inspired glasses, pink brush marks, and a glowing loot crystal for the drop prediction section.</desc>
+  <defs>
+    <linearGradient id="nene-badge-pink" x1="38" x2="212" y1="52" y2="207" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f3b8c7"/>
+      <stop offset="1" stop-color="#e46f91"/>
+    </linearGradient>
+    <linearGradient id="nene-badge-lens" x1="65" x2="188" y1="81" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fbff"/>
+      <stop offset=".47" stop-color="#9fc5ef"/>
+      <stop offset="1" stop-color="#f3d47a"/>
+    </linearGradient>
+    <linearGradient id="nene-badge-crystal" x1="106" x2="153" y1="83" y2="166" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7f1e7"/>
+      <stop offset=".42" stop-color="#7fb6f2"/>
+      <stop offset="1" stop-color="#2e64ad"/>
+    </linearGradient>
+    <filter id="nene-badge-shadow" x="10" y="13" width="236" height="229" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" flood-color="#000814" flood-opacity=".35" stdDeviation="10"/>
+    </filter>
+    <filter id="nene-badge-glow" x="82" y="58" width="96" height="128" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#nene-badge-shadow)">
+    <path
+      d="M46 75c23-23 74-31 114-20 34 10 57 36 56 68-2 48-42 81-93 83-43 2-87-19-95-55-5-23 1-54 18-76Z"
+      fill="url(#nene-badge-pink)"
+      opacity=".72"
+    />
+    <path
+      d="M70 52c-17 4-27 12-31 24m151 13c17 16 24 36 17 57m-37 45c-22 15-60 17-84 8"
+      stroke="#080a10"
+      stroke-linecap="round"
+      stroke-width="3"
+      opacity=".42"
+    />
+    <circle cx="128" cy="130" r="81" fill="#08111f" opacity=".94"/>
+    <circle cx="128" cy="130" r="76" stroke="#d8aa45" stroke-opacity=".62" stroke-width="3"/>
+    <circle cx="128" cy="130" r="65" stroke="#7fb6f2" stroke-dasharray="9 12" stroke-linecap="round" stroke-opacity=".35" stroke-width="2"/>
+
+    <path
+      d="M57 107c23-12 50-14 69 4m5 0c21-18 54-15 70 4"
+      stroke="#0b0c11"
+      stroke-linecap="round"
+      stroke-width="4"
+      opacity=".45"
+    />
+    <g stroke="url(#nene-badge-lens)" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="52" y="88" width="72" height="54" rx="22" stroke-width="5" transform="rotate(-7 88 115)"/>
+      <rect x="132" y="88" width="72" height="54" rx="22" stroke-width="5" transform="rotate(7 168 115)"/>
+      <path d="M121 114c5-4 11-4 16 0" stroke="#f3d47a" stroke-width="5"/>
+      <path d="M50 104l-16-5m188 7 14-6" stroke="#f3d47a" stroke-width="4"/>
+      <path d="M111 128c5 3 10 3 14 0m18 0c5 3 10 3 14 0" stroke="#f7f1e7" stroke-opacity=".75" stroke-width="3"/>
+    </g>
+
+    <g filter="url(#nene-badge-glow)">
+      <path d="M129 80 157 111 129 173 100 111l29-31Z" fill="url(#nene-badge-crystal)" stroke="#f3d47a" stroke-linejoin="round" stroke-width="4"/>
+      <path d="M129 80v93M100 111h57M129 80l-9 31 9 62 10-62-10-31Z" stroke="#f7f1e7" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".66" stroke-width="2"/>
+      <circle cx="129" cy="111" r="7" fill="#f3d47a"/>
+    </g>
+
+    <path d="M71 166c10 4 21 3 32-3m52 0c12 7 24 8 36 3" stroke="#e6a5b8" stroke-linecap="round" stroke-width="5"/>
+    <path d="M56 59 62 73l15 1-12 9 4 15-13-9-13 8 5-15-12-9 15-1 5-13Z" stroke="#0b0c11" stroke-linejoin="round" stroke-width="4"/>
+    <path d="M200 172c7-10 22-2 11 10l-11 11-11-11c-11-12 5-20 11-10Z" fill="#f3b8c7" stroke="#0b0c11" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M81 190c8 10 26 17 45 16 21-1 38-8 48-19" stroke="#f7f1e7" stroke-linecap="round" stroke-width="3" opacity=".42"/>
+    <circle cx="211" cy="66" r="4" fill="#080a10"/>
+    <circle cx="47" cy="179" r="3" fill="#080a10"/>
+    <path d="M211 87c7 3 14 3 22 0M222 76c-1 7-1 14 0 21" stroke="#f7f1e7" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
